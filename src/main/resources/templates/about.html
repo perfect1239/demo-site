@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Про Нас</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title></svg>
+        <span class="fs-4">Perfect blog</span>
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/feature">Features</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/">home</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/blog">blog</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/blog/ad">Add post</a>
+        <a class="py-2 link-body-emphasis text-decoration-none" href="/about">About us</a>
+    </nav>
+</div>
+</div>
+<div class="container mt-4">
+    <h1 th:text="${title}"/></h1>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
